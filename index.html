@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Decreto 1667 de 2021 — Matrícula Cero | Biblioteca Legal Colombiana</title>
+<meta name="description" content="Decreto 1667 del 7 de diciembre de 2021 - Matrícula Cero y Alivios ICETEX. Reglamentación del artículo 27 de la Ley 2155 de 2021."/>
+<meta property="og:title" content="Decreto 1667 de 2021 — Matrícula Cero"/>
+<meta property="og:description" content="Reglamentación del programa Matrícula Cero y alivios ICETEX para educación superior en Colombia."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://haroldco45.github.io/decreto-1667-2021"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="manifest" href="#" id="manifest-link"/>
+<meta name="theme-color" content="#1a3a6b"/>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap');
+
+  :root {
+    --azul-noche: #0d1f3c;
+    --azul-estado: #1a3a6b;
+    --azul-medio: #2657a8;
+    --dorado: #c8922a;
+    --dorado-claro: #e8b84b;
+    --crema: #f7f3eb;
+    --gris-texto: #2c2c2c;
+    --gris-medio: #666;
+    --borde: #d4c9b0;
+    --blanco: #ffffff;
+    --verde-vigente: #1a6b3a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--crema);
+    color: var(--gris-texto);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  /* ── SPLASH ── */
+  #splash {
+    position: fixed; inset: 0; z-index: 9999;
+    background: var(--azul-noche);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 16px;
+    transition: opacity .6s ease;
+  }
+  #splash .escudo { font-size: 56px; }
+  #splash h1 {
+    font-family: 'Playfair Display', serif;
+    color: var(--dorado-claro);
+    font-size: clamp(1.1rem, 4vw, 1.6rem);
+    text-align: center;
+    letter-spacing: .04em;
+    padding: 0 24px;
+  }
+  #splash p {
+    color: #9ab; font-family: 'Inter', sans-serif;
+    font-size: .8rem; letter-spacing: .15em; text-transform: uppercase;
+  }
+  #splash .barra {
+    width: 160px; height: 3px;
+    background: #1f3d70;
+    border-radius: 2px; overflow: hidden;
+    margin-top: 8px;
+  }
+  #splash .barra-fill {
+    height: 100%; width: 0;
+    background: var(--dorado);
+    animation: load 1.4s ease forwards;
+  }
+  @keyframes load { to { width: 100%; } }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--azul-noche);
+    color: var(--blanco);
+    padding: 0;
+  }
+  .header-top {
+    display: flex; align-items: center; gap: 14px;
+    padding: 14px 24px;
+    border-bottom: 1px solid #1f3d70;
+  }
+  .header-top .escudo { font-size: 32px; }
+  .biblioteca-label {
+    font-family: 'Inter', sans-serif;
+    font-size: .7rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: #7a9cc4;
+  }
+  .biblioteca-nombre {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: var(--dorado-claro);
+    margin-top: 2px;
+  }
+  .volumen-badge {
+    margin-left: auto;
+    background: var(--dorado);
+    color: var(--azul-noche);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: .72rem;
+    padding: 4px 10px;
+    border-radius: 2px;
+    letter-spacing: .06em;
+  }
+
+  /* ── HERO DECRETO ── */
+  .hero {
+    background: linear-gradient(135deg, var(--azul-estado) 0%, var(--azul-noche) 100%);
+    padding: 36px 24px 32px;
+    border-bottom: 4px solid var(--dorado);
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: '⚖';
+    position: absolute; right: -10px; top: -20px;
+    font-size: 140px; opacity: .04;
+  }
+  .tipo-norma {
+    font-family: 'Inter', sans-serif;
+    font-size: .68rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--dorado-claro);
+    margin-bottom: 8px;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.5rem, 5vw, 2.2rem);
+    color: var(--blanco);
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+  .hero .subtitulo {
+    font-size: .95rem;
+    color: #a8c4e8;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  .meta-chips {
+    display: flex; flex-wrap: wrap; gap: 8px;
+  }
+  .chip {
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.15);
+    color: #c8dff5;
+    font-family: 'Inter', sans-serif;
+    font-size: .72rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: .04em;
+  }
+  .chip.vigente {
+    background: rgba(26,107,58,.3);
+    border-color: rgba(26,200,90,.3);
+    color: #5de08a;
+  }
+
+  /* ── NAV ── */
+  nav {
+    background: var(--azul-estado);
+    padding: 0 24px;
+    display: flex; gap: 0; overflow-x: auto;
+    scrollbar-width: none;
+    border-bottom: 2px solid var(--dorado);
+    position: sticky; top: 0; z-index: 100;
+  }
+  nav::-webkit-scrollbar { display: none; }
+  .nav-btn {
+    background: none; border: none;
+    color: #8aaecc;
+    font-family: 'Inter', sans-serif;
+    font-size: .78rem;
+    font-weight: 500;
+    padding: 13px 16px;
+    cursor: pointer;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: color .2s, border-color .2s;
+    letter-spacing: .04em;
+  }
+  .nav-btn:hover { color: var(--blanco); }
+  .nav-btn.activo {
+    color: var(--dorado-claro);
+    border-bottom-color: var(--dorado);
+  }
+
+  /* ── MAIN ── */
+  main { max-width: 800px; margin: 0 auto; padding: 28px 20px 60px; }
+
+  section { display: none; }
+  section.activa { display: block; }
+
+  /* ── SECCION RESUMEN ── */
+  .ficha-tecnica {
+    background: var(--blanco);
+    border: 1px solid var(--borde);
+    border-left: 4px solid var(--azul-medio);
+    border-radius: 4px;
+    padding: 20px 22px;
+    margin-bottom: 24px;
+  }
+  .ficha-tecnica h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: .7rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--azul-medio);
+    margin-bottom: 14px;
+  }
+  .ficha-row {
+    display: grid; grid-template-columns: 140px 1fr;
+    gap: 6px 16px; align-items: start;
+    padding: 6px 0;
+    border-bottom: 1px solid #f0ebe0;
+  }
+  .ficha-row:last-child { border-bottom: none; }
+  .ficha-label {
+    font-family: 'Inter', sans-serif;
+    font-size: .76rem;
+    font-weight: 600;
+    color: var(--gris-medio);
+    letter-spacing: .04em;
+  }
+  .ficha-valor {
+    font-size: .9rem;
+    color: var(--gris-texto);
+  }
+  .ficha-valor.highlight {
+    font-weight: 600;
+    color: var(--azul-estado);
+  }
+
+  .seccion-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    color: var(--azul-estado);
+    margin: 28px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--borde);
+  }
+  .seccion-titulo::before {
+    content: '§ ';
+    color: var(--dorado);
+  }
+
+  p { margin-bottom: 14px; font-size: .95rem; }
+
+  .alerta-box {
+    background: #fff8e8;
+    border: 1px solid #e8c86b;
+    border-left: 4px solid var(--dorado);
+    border-radius: 4px;
+    padding: 16px 18px;
+    margin: 20px 0;
+    font-size: .9rem;
+  }
+  .alerta-box strong {
+    display: block; margin-bottom: 6px;
+    color: #8a5c00;
+    font-family: 'Inter', sans-serif;
+    font-size: .75rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  /* ── ARTICULOS ── */
+  .articulo-card {
+    background: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: 4px;
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+  .articulo-header {
+    background: var(--azul-estado);
+    color: var(--blanco);
+    padding: 12px 18px;
+    display: flex; align-items: center; gap: 12px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .art-num {
+    background: var(--dorado);
+    color: var(--azul-noche);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: .72rem;
+    padding: 3px 8px;
+    border-radius: 2px;
+    white-space: nowrap;
+    letter-spacing: .04em;
+  }
+  .art-titulo {
+    font-family: 'Inter', sans-serif;
+    font-size: .85rem;
+    font-weight: 500;
+    flex: 1;
+  }
+  .art-chevron {
+    font-size: .8rem;
+    transition: transform .25s;
+  }
+  .articulo-body {
+    padding: 16px 18px;
+    font-size: .88rem;
+    line-height: 1.75;
+    border-top: 1px solid var(--borde);
+    display: none;
+  }
+  .articulo-card.abierto .articulo-body { display: block; }
+  .articulo-card.abierto .art-chevron { transform: rotate(180deg); }
+
+  .art-parag {
+    background: #f0f5ff;
+    border-left: 3px solid var(--azul-medio);
+    padding: 10px 14px;
+    margin: 10px 0;
+    font-size: .85rem;
+    border-radius: 0 3px 3px 0;
+  }
+  .art-parag strong {
+    color: var(--azul-estado);
+    font-family: 'Inter', sans-serif;
+    font-size: .72rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  /* ── NORMATIVA RELACIONADA ── */
+  .norma-item {
+    background: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: 4px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    display: flex; gap: 14px; align-items: flex-start;
+  }
+  .norma-icono {
+    font-size: 1.4rem; flex-shrink: 0; margin-top: 2px;
+  }
+  .norma-info h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: .85rem;
+    color: var(--azul-estado);
+    margin-bottom: 3px;
+  }
+  .norma-info p {
+    font-size: .82rem;
+    color: var(--gris-medio);
+    margin: 0;
+  }
+  .norma-tipo {
+    font-family: 'Inter', sans-serif;
+    font-size: .65rem;
+    background: #e8f0ff;
+    color: var(--azul-medio);
+    padding: 2px 7px;
+    border-radius: 10px;
+    letter-spacing: .06em;
+    margin-top: 6px;
+    display: inline-block;
+  }
+
+  /* ── GLOSARIO ── */
+  .termino-card {
+    background: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: 4px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+  }
+  .termino-card dt {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: var(--azul-estado);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .termino-card dd {
+    font-size: .88rem;
+    color: var(--gris-texto);
+    line-height: 1.6;
+  }
+
+  /* ── AI CHAT ── */
+  .chat-container {
+    background: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .chat-header {
+    background: var(--azul-estado);
+    color: var(--blanco);
+    padding: 14px 18px;
+    font-family: 'Inter', sans-serif;
+    font-size: .85rem;
+    font-weight: 600;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .chat-dot {
+    width: 8px; height: 8px;
+    background: #4de88a;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: .3; }
+  }
+  .chat-messages {
+    height: 280px;
+    overflow-y: auto;
+    padding: 16px;
+    display: flex; flex-direction: column; gap: 12px;
+    scroll-behavior: smooth;
+  }
+  .msg {
+    max-width: 88%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: .85rem;
+    line-height: 1.55;
+  }
+  .msg.bot {
+    background: #f0f5ff;
+    border: 1px solid #d0dff8;
+    color: var(--gris-texto);
+    align-self: flex-start;
+  }
+  .msg.bot em {
+    display: block;
+    font-size: .7rem;
+    color: var(--azul-medio);
+    font-style: normal;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 5px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+  .msg.user {
+    background: var(--azul-estado);
+    color: var(--blanco);
+    align-self: flex-end;
+  }
+  .chat-input-row {
+    display: flex; gap: 8px;
+    padding: 12px 14px;
+    border-top: 1px solid var(--borde);
+    background: #fafaf8;
+  }
+  .chat-input {
+    flex: 1;
+    border: 1px solid var(--borde);
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-family: 'Source Serif 4', serif;
+    font-size: .85rem;
+    color: var(--gris-texto);
+    background: var(--blanco);
+    resize: none;
+    outline: none;
+  }
+  .chat-input:focus { border-color: var(--azul-medio); }
+  .chat-send {
+    background: var(--azul-estado);
+    color: var(--blanco);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 18px;
+    font-family: 'Inter', sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .2s;
+  }
+  .chat-send:hover { background: var(--azul-medio); }
+  .chat-send:disabled { background: #aaa; cursor: not-allowed; }
+  .sugerencias {
+    display: flex; flex-wrap: wrap; gap: 7px;
+    padding: 10px 14px 0;
+  }
+  .sug-btn {
+    background: #e8f0ff;
+    border: 1px solid #c0d0f0;
+    color: var(--azul-medio);
+    font-family: 'Inter', sans-serif;
+    font-size: .72rem;
+    padding: 5px 10px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background .2s;
+  }
+  .sug-btn:hover { background: #d0e0ff; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--azul-noche);
+    color: #6a8aaa;
+    text-align: center;
+    padding: 20px 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: .72rem;
+    letter-spacing: .08em;
+    margin-top: 40px;
+  }
+  footer span { color: var(--dorado-claro); }
+
+  /* ── TIPOGRAFÍA CUERPO ── */
+  .cuerpo-texto {
+    font-size: .95rem;
+    line-height: 1.8;
+    color: #333;
+  }
+  .cuerpo-texto b {
+    color: var(--azul-estado);
+  }
+
+  @media(max-width: 500px) {
+    .ficha-row { grid-template-columns: 1fr; }
+    .ficha-label { font-size: .72rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- SPLASH -->
+<div id="splash">
+  <div class="escudo">🏛️</div>
+  <h1>Decreto 1667 de 2021<br/>Matrícula Cero</h1>
+  <p>Biblioteca Legal Colombiana</p>
+  <div class="barra"><div class="barra-fill"></div></div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <div class="escudo">🇨🇴</div>
+    <div>
+      <div class="biblioteca-label">República de Colombia</div>
+      <div class="biblioteca-nombre">Biblioteca Legal Colombiana</div>
+    </div>
+    <div class="volumen-badge">EDUCACIÓN</div>
+  </div>
+
+  <div class="hero">
+    <div class="tipo-norma">📋 Decreto Reglamentario · Ministerio de Educación Nacional</div>
+    <h1>Decreto 1667 de 2021</h1>
+    <div class="subtitulo">"Matrícula Cero y Alivios para usuarios del ICETEX"</div>
+    <div class="meta-chips">
+      <span class="chip">7 dic. 2021</span>
+      <span class="chip">D.O. 51.881</span>
+      <span class="chip">Ley 2155/2021 Art. 27</span>
+      <span class="chip vigente">✓ Vigente</span>
+    </div>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav id="nav">
+  <button class="nav-btn activo" onclick="cambiarTab('resumen', this)">Resumen</button>
+  <button class="nav-btn" onclick="cambiarTab('articulos', this)">Artículos</button>
+  <button class="nav-btn" onclick="cambiarTab('normativa', this)">Normativa</button>
+  <button class="nav-btn" onclick="cambiarTab('glosario', this)">Glosario</button>
+  <button class="nav-btn" onclick="cambiarTab('chat', this)">🤖 Consultas</button>
+</nav>
+
+<main>
+
+  <!-- TAB: RESUMEN -->
+  <section id="resumen" class="activa">
+    <div class="ficha-tecnica">
+      <h3>📌 Ficha Técnica</h3>
+      <div class="ficha-row">
+        <span class="ficha-label">Norma</span>
+        <span class="ficha-valor highlight">Decreto 1667 de 2021</span>
+      </div>
+      <div class="ficha-row">
+        <span class="ficha-label">Fecha</span>
+        <span class="ficha-valor">7 de diciembre de 2021</span>
+      </div>
+      <div class="ficha-row">
+        <span class="ficha-label">Diario Oficial</span>
+        <span class="ficha-valor">No. 51.881</span>
+      </div>
+      <div class="ficha-row">
+        <span class="ficha-label">Entidad</span>
+        <span class="ficha-valor">Ministerio de Educación Nacional</span>
+      </div>
+      <div class="ficha-row">
+        <span class="ficha-label">Tipo</span>
+        <span class="ficha-valor">Decreto Reglamentario</span>
+      </div>
+      <div class="ficha-row">
+        <span class="ficha-label">Reglamenta</span>
+        <span class="ficha-valor">Art. 27 Ley 2155 de 2021</span>
+      </div>
+      <div class="ficha-row">
+        <span class="ficha-label">Modifica</span>
+        <span class="ficha-valor">Decreto 1075 de 2015 (secciones 5 y 6)</span>
+      </div>
+    </div>
+
+    <h2 class="seccion-titulo">¿Qué es este decreto?</h2>
+    <div class="cuerpo-texto">
+      <p>El <b>Decreto 1667 de 2021</b> reglamenta el programa de <b>Matrícula Cero</b> y los <b>alivios para usuarios del ICETEX</b>, establecidos en el artículo 27 de la Ley 2155 de 2021 (Ley de Inversión Social).</p>
+      <p>Su objetivo es garantizar el acceso y permanencia en la <b>educación superior pública</b> de estudiantes en condición de vulnerabilidad socioeconómica, financiando el pago de la matrícula con recursos del Estado a través del ICETEX.</p>
+    </div>
+
+    <div class="alerta-box">
+      <strong>⚖️ Fundamento constitucional</strong>
+      Los artículos 67 y 69 de la Constitución Política consagran la educación como derecho fundamental y obligan al Estado a facilitar mecanismos financieros para el acceso a la educación superior. La Corte Constitucional (C-376/2010) señaló que dicho acceso exige cobertura progresiva y remoción de obstáculos económicos.
+    </div>
+
+    <h2 class="seccion-titulo">¿A quién beneficia?</h2>
+    <div class="cuerpo-texto">
+      <p>Estudiantes admitidos en <b>instituciones de educación superior públicas</b> (técnica profesional, tecnológica y universitaria) que se encuentren en condición de <b>vulnerabilidad económica</b>, con especial atención a población rural y jóvenes entre 14 y 28 años.</p>
+    </div>
+
+    <h2 class="seccion-titulo">Los dos programas que reglamenta</h2>
+    <div class="norma-item">
+      <div class="norma-icono">🎓</div>
+      <div class="norma-info">
+        <h4>Matrícula Cero</h4>
+        <p>Financia el pago total o parcial de la matrícula en IES públicas para estudiantes vulnerables admitidos, con criterios de focalización definidos por el MEN e implementados por el ICETEX.</p>
+        <span class="norma-tipo">Sección 5 — Decreto 1075/2015</span>
+      </div>
+    </div>
+    <div class="norma-item">
+      <div class="norma-icono">🏦</div>
+      <div class="norma-info">
+        <h4>Alivios ICETEX</h4>
+        <p>Medidas de alivio financiero para usuarios activos con crédito educativo, incluyendo condonaciones parciales, períodos de gracia y reducción de tasas para población en condición de vulnerabilidad.</p>
+        <span class="norma-tipo">Sección 6 — Decreto 1075/2015</span>
+      </div>
+    </div>
+
+    <h2 class="seccion-titulo">Marco institucional</h2>
+    <div class="cuerpo-texto">
+      <p>La operación del programa corresponde al <b>ICETEX</b> (Instituto Colombiano de Crédito Educativo y Estudios Técnicos en el Exterior), entidad financiera de naturaleza especial vinculada al Ministerio de Educación, facultada para concertar alianzas con entidades públicas y privadas y administrar fondos destinados a ampliar la cobertura de la educación superior.</p>
+      <p>Este decreto se enmarca en el programa <b>Generación E</b> del Plan Nacional de Desarrollo "Pacto por Colombia, Pacto por la Equidad" (Ley 1955 de 2019), que busca ampliar el ingreso a la educación superior de estudiantes vulnerables.</p>
+    </div>
+  </section>
+
+  <!-- TAB: ARTÍCULOS -->
+  <section id="articulos">
+    <p style="color: var(--gris-medio); font-size:.85rem; margin-bottom:18px; font-family:'Inter',sans-serif;">Toca cada artículo para ver su contenido.</p>
+
+    <div class="articulo-card" onclick="toggleArt(this)">
+      <div class="articulo-header">
+        <span class="art-num">ART. 1</span>
+        <span class="art-titulo">Adición Sección 5 — Matrícula Cero (Decreto 1075/2015)</span>
+        <span class="art-chevron">▼</span>
+      </div>
+      <div class="articulo-body">
+        <p>Adiciona la <b>Sección 5 al Capítulo 3, Título 3, Parte 5, Libro 2</b> del Decreto 1075 de 2015, incorporando los artículos 2.5.3.3.5.1 y siguientes, que regulan el programa de Matrícula Cero:</p>
+        <div class="art-parag">
+          <strong>Objeto del programa</strong>
+          Financiar el pago de matrícula en instituciones de educación superior públicas a estudiantes admitidos que cumplan los criterios de vulnerabilidad socioeconómica establecidos por el Ministerio de Educación Nacional.
+        </div>
+        <div class="art-parag">
+          <strong>Criterios de focalización</strong>
+          El MEN define los criterios de priorización con base en variables como el Sisbén, condición de vulnerabilidad, procedencia rural, pertenencia a grupos étnicos y situación de discapacidad, entre otros.
+        </div>
+        <div class="art-parag">
+          <strong>Operación</strong>
+          El ICETEX opera el programa mediante convenios con las IES públicas. Los recursos son transferidos directamente a la institución educativa en nombre del estudiante.
+        </div>
+      </div>
+    </div>
+
+    <div class="articulo-card" onclick="toggleArt(this)">
+      <div class="articulo-header">
+        <span class="art-num">ART. 2</span>
+        <span class="art-titulo">Adición Sección 6 — Alivios ICETEX (Decreto 1075/2015)</span>
+        <span class="art-chevron">▼</span>
+      </div>
+      <div class="articulo-body">
+        <p>Adiciona la <b>Sección 6 al Capítulo 3, Título 3, Parte 5, Libro 2</b> del Decreto 1075 de 2015, estableciendo las modalidades de alivio para usuarios activos del ICETEX:</p>
+        <div class="art-parag">
+          <strong>Tipos de alivio</strong>
+          Condonación parcial de saldo, período de gracia para inicio de pago, reducción de tasa de interés y reestructuración de deuda, aplicables según el perfil socioeconómico del deudor.
+        </div>
+        <div class="art-parag">
+          <strong>Población objetivo de los alivios</strong>
+          Usuarios con crédito activo que acrediten condición de vulnerabilidad, desempleo prolongado, discapacidad, o que pertenezcan a comunidades étnicas o zonas PDET.
+        </div>
+        <div class="art-parag">
+          <strong>Fuente de recursos</strong>
+          Los alivios se financian con cargo al presupuesto del Ministerio de Educación Nacional y los fondos administrados por el ICETEX, conforme a la disponibilidad fiscal.
+        </div>
+      </div>
+    </div>
+
+    <div class="articulo-card" onclick="toggleArt(this)">
+      <div class="articulo-header">
+        <span class="art-num">ART. 3</span>
+        <span class="art-titulo">Vigencia y derogatorias</span>
+        <span class="art-chevron">▼</span>
+      </div>
+      <div class="articulo-body">
+        <p>El decreto rige a partir de su publicación en el Diario Oficial No. 51.881 del <b>7 de diciembre de 2021</b>.</p>
+        <p>Las disposiciones incorporadas quedan integradas al <b>Decreto Único Reglamentario 1075 de 2015</b> del Sector Educación y se consultan directamente en los artículos adicionados. No deroga ninguna norma anterior, sino que complementa el marco regulatorio existente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAB: NORMATIVA RELACIONADA -->
+  <section id="normativa">
+    <p style="color:var(--gris-medio); font-size:.85rem; margin-bottom:18px; font-family:'Inter',sans-serif;">Normas que fundamentan, complementan o son modificadas por este decreto.</p>
+
+    <div class="norma-item">
+      <div class="norma-icono">📜</div>
+      <div class="norma-info">
+        <h4>Constitución Política — Arts. 67 y 69</h4>
+        <p>La educación como derecho fundamental y servicio público. Obligación del Estado de facilitar acceso a la educación superior mediante mecanismos financieros.</p>
+        <span class="norma-tipo">Fundamento constitucional</span>
+      </div>
+    </div>
+
+    <div class="norma-item">
+      <div class="norma-icono">📋</div>
+      <div class="norma-info">
+        <h4>Ley 2155 de 2021 — Art. 27</h4>
+        <p>Ley de Inversión Social. Crea el programa de Matrícula Cero y los alivios ICETEX. El Decreto 1667/2021 es su reglamentación directa.</p>
+        <span class="norma-tipo">Norma reglamentada</span>
+      </div>
+    </div>
+
+    <div class="norma-item">
+      <div class="norma-icono">📚</div>
+      <div class="norma-info">
+        <h4>Decreto 1075 de 2015</h4>
+        <p>Decreto Único Reglamentario del Sector Educación. El Decreto 1667/2021 le adiciona las Secciones 5 y 6 al Capítulo 3, Título 3, Parte 5, Libro 2.</p>
+        <span class="norma-tipo">Norma modificada/adicionada</span>
+      </div>
+    </div>
+
+    <div class="norma-item">
+      <div class="norma-icono">🏫</div>
+      <div class="norma-info">
+        <h4>Ley 30 de 1992 — Arts. 111 y 114</h4>
+        <p>Organización del servicio público de Educación Superior. Base para la política de créditos y ayudas estudiantiles ejecutada por el ICETEX.</p>
+        <span class="norma-tipo">Marco sectorial</span>
+      </div>
+    </div>
+
+    <div class="norma-item">
+      <div class="norma-icono">💼</div>
+      <div class="norma-info">
+        <h4>Ley 1002 de 2005</h4>
+        <p>Transforma el ICETEX en entidad financiera de naturaleza especial, con facultades para administrar fondos y concertar alianzas para educación superior.</p>
+        <span class="norma-tipo">Marco institucional ICETEX</span>
+      </div>
+    </div>
+
+    <div class="norma-item">
+      <div class="norma-icono">🤝</div>
+      <div class="norma-info">
+        <h4>Ley 1955 de 2019 — Art. 185</h4>
+        <p>Plan Nacional de Desarrollo 2018–2022. Establece el avance gradual hacia la gratuidad en IES públicas para población vulnerable. Origen del programa Generación E.</p>
+        <span class="norma-tipo">Plan Nacional de Desarrollo</span>
+      </div>
+    </div>
+
+    <div class="norma-item">
+      <div class="norma-icono">⚖️</div>
+      <div class="norma-info">
+        <h4>Sentencia C-376 de 2010 — Corte Constitucional</h4>
+        <p>Establece que el acceso a la educación superior es un derecho fundamental y que el Estado tiene obligación de cobertura progresiva para remover obstáculos de acceso.</p>
+        <span class="norma-tipo">Jurisprudencia constitucional</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAB: GLOSARIO -->
+  <section id="glosario">
+    <p style="color:var(--gris-medio); font-size:.85rem; margin-bottom:18px; font-family:'Inter',sans-serif;">Términos clave del decreto.</p>
+    <dl>
+      <div class="termino-card">
+        <dt>Matrícula Cero</dt>
+        <dd>Programa que financia el pago total o parcial de la matrícula en instituciones de educación superior públicas para estudiantes en condición de vulnerabilidad socioeconómica, sin que el beneficiario deba reembolsar los recursos (no es un crédito).</dd>
+      </div>
+      <div class="termino-card">
+        <dt>ICETEX</dt>
+        <dd>Instituto Colombiano de Crédito Educativo y Estudios Técnicos en el Exterior. Entidad financiera de naturaleza especial, vinculada al Ministerio de Educación, que administra créditos educativos y el programa de Matrícula Cero.</dd>
+      </div>
+      <div class="termino-card">
+        <dt>IES públicas</dt>
+        <dd>Instituciones de Educación Superior públicas. Incluye universidades, institutos tecnológicos y escuelas tecnológicas de carácter oficial. Las IES privadas no están cubiertas por este decreto.</dd>
+      </div>
+      <div class="termino-card">
+        <dt>Vulnerabilidad socioeconómica</dt>
+        <dd>Condición del estudiante determinada por criterios del MEN: puntaje Sisbén, nivel de ingresos del hogar, procedencia rural, pertenencia a comunidades étnicas, situación de discapacidad, entre otros factores.</dd>
+      </div>
+      <div class="termino-card">
+        <dt>Alivios ICETEX</dt>
+        <dd>Medidas de alivio financiero para deudores activos del ICETEX en condición de vulnerabilidad. Incluyen condonación parcial, período de gracia, reducción de tasa y reestructuración de deuda.</dd>
+      </div>
+      <div class="termino-card">
+        <dt>Decreto Único Reglamentario (DUR)</dt>
+        <dd>Herramienta de política de simplificación normativa. El Decreto 1075 de 2015 compila toda la regulación del Sector Educación. Al adicionarle secciones, el Decreto 1667/2021 se integra en ese cuerpo normativo.</dd>
+      </div>
+      <div class="termino-card">
+        <dt>Generación E</dt>
+        <dd>Programa del Gobierno nacional (PND 2018–2022) orientado a ampliar el ingreso a la educación superior de estudiantes vulnerables. Es el antecedente directo del programa Matrícula Cero consagrado en la Ley 2155/2021.</dd>
+      </div>
+      <div class="termino-card">
+        <dt>Zonas PDET</dt>
+        <dd>Programas de Desarrollo con Enfoque Territorial. Municipios priorizados en el Acuerdo de Paz con mayores índices de pobreza, conflicto e institucionalidad débil. Sus estudiantes tienen prioridad en los criterios de focalización.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- TAB: CHAT IA -->
+  <section id="chat">
+    <div class="chat-container">
+      <div class="chat-header">
+        <div class="chat-dot"></div>
+        Asistente Legal — Decreto 1667 de 2021
+      </div>
+      <div class="sugerencias">
+        <button class="sug-btn" onclick="usarSugerencia('¿Quién puede acceder a Matrícula Cero?')">¿Quién accede a Matrícula Cero?</button>
+        <button class="sug-btn" onclick="usarSugerencia('¿Cuál es la diferencia entre Matrícula Cero y un crédito ICETEX?')">¿Diferencia con crédito ICETEX?</button>
+        <button class="sug-btn" onclick="usarSugerencia('¿Qué instituciones están cubiertas por el decreto?')">¿Qué IES cubre?</button>
+        <button class="sug-btn" onclick="usarSugerencia('¿Qué alivios ofrece el ICETEX para deudores?')">Alivios para deudores</button>
+      </div>
+      <div class="chat-messages" id="chatMessages">
+        <div class="msg bot">
+          <em>⚖️ Asistente Legal</em>
+          Hola. Soy el asistente especializado en el <strong>Decreto 1667 de 2021</strong> sobre Matrícula Cero y alivios ICETEX. Puedes preguntarme sobre requisitos, beneficiarios, instituciones cubiertas, diferencias con otros programas o cualquier aspecto de esta norma.
+        </div>
+      </div>
+      <div class="chat-input-row">
+        <textarea class="chat-input" id="chatInput" rows="2" placeholder="Escribe tu consulta sobre el Decreto 1667/2021…" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();enviarMensaje();}"></textarea>
+        <button class="chat-send" id="chatSend" onclick="enviarMensaje()">Enviar</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>Desarrollada por Vibras Positivas HM</span> — Derechos de Autor Reservados<br/>
+  Biblioteca Legal Colombiana · Decreto 1667 de 2021 · Fuente: Diario Oficial 51.881
+</footer>
+
+<script>
+// ── SPLASH ──
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const s = document.getElementById('splash');
+    s.style.opacity = '0';
+    setTimeout(() => s.remove(), 600);
+  }, 1600);
+});
+
+// ── TABS ──
+function cambiarTab(id, btn) {
+  document.querySelectorAll('section').forEach(s => s.classList.remove('activa'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('activo'));
+  document.getElementById(id).classList.add('activa');
+  btn.classList.add('activo');
+}
+
+// ── ARTÍCULOS ACORDEÓN ──
+function toggleArt(card) {
+  card.classList.toggle('abierto');
+}
+
+// ── CHAT IA ──
+const SYSTEM_PROMPT = `Eres un asistente jurídico especializado exclusivamente en el Decreto 1667 del 7 de diciembre de 2021 de Colombia, que reglamenta el programa Matrícula Cero y los alivios para usuarios del ICETEX, en cumplimiento del artículo 27 de la Ley 2155 de 2021.
+
+El decreto adiciona las Secciones 5 y 6 al Capítulo 3, Título 3, Parte 5, Libro 2 del Decreto 1075 de 2015 (Decreto Único Reglamentario del Sector Educación).
+
+Puntos clave:
+- Matrícula Cero: financia matrícula en IES públicas para estudiantes vulnerables (no es un crédito, no se reembolsa).
+- Alivios ICETEX: condonación parcial, período de gracia, reducción de tasa y reestructuración para deudores vulnerables.
+- Criterios de focalización: Sisbén, ruralidad, etnia, discapacidad, zonas PDET.
+- Operador: ICETEX, vinculado al Ministerio de Educación Nacional.
+- IES cubiertas: solo instituciones públicas (técnica profesional, tecnológica y universitaria).
+- Fundamento: Arts. 67 y 69 C.P., Ley 30/1992, Ley 1002/2005, Ley 1955/2019.
+
+Responde en español, de forma clara y útil para ciudadanos colombianos. Si la pregunta no está relacionada con este decreto, redirige amablemente. Sé conciso (máximo 4 párrafos). No inventes artículos ni datos que no estén en el decreto.`;
+
+async function enviarMensaje() {
+  const input = document.getElementById('chatInput');
+  const texto = input.value.trim();
+  if (!texto) return;
+
+  agregarMsg(texto, 'user');
+  input.value = '';
+
+  const btn = document.getElementById('chatSend');
+  btn.disabled = true;
+  btn.textContent = '…';
+
+  const typing = agregarMsg('Analizando tu consulta…', 'bot', true);
+
+  try {
+    const resp = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 1000,
+        system: SYSTEM_PROMPT,
+        messages: [{ role: 'user', content: texto }]
+      })
+    });
+    const data = await resp.json();
+    const respText = data.content?.map(b => b.text || '').join('') || 'No se pudo obtener respuesta.';
+    typing.remove();
+    agregarMsg(respText, 'bot');
+  } catch {
+    typing.remove();
+    agregarMsg('Error de conexión. Verifica tu internet e intenta de nuevo.', 'bot');
+  }
+
+  btn.disabled = false;
+  btn.textContent = 'Enviar';
+}
+
+function agregarMsg(texto, tipo, es_temp = false) {
+  const msgs = document.getElementById('chatMessages');
+  const div = document.createElement('div');
+  div.className = `msg ${tipo}`;
+  if (tipo === 'bot') {
+    div.innerHTML = `<em>⚖️ Asistente Legal</em>${texto.replace(/\n/g, '<br/>')}`;
+  } else {
+    div.textContent = texto;
+  }
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+  return div;
+}
+
+function usarSugerencia(texto) {
+  document.getElementById('chatInput').value = texto;
+  enviarMensaje();
+}
+
+// ── PWA MANIFEST ──
+const manifest = {
+  name: 'Decreto 1667 de 2021 — Matrícula Cero',
+  short_name: 'D.1667/2021',
+  start_url: '.',
+  display: 'standalone',
+  background_color: '#0d1f3c',
+  theme_color: '#1a3a6b',
+  description: 'Matrícula Cero y Alivios ICETEX — Biblioteca Legal Colombiana',
+  icons: [
+    { src: 'https://placehold.co/192x192/1a3a6b/e8b84b?text=D.1667', sizes: '192x192', type: 'image/png' },
+    { src: 'https://placehold.co/512x512/1a3a6b/e8b84b?text=D.1667', sizes: '512x512', type: 'image/png' }
+  ]
+};
+const blob = new Blob([JSON.stringify(manifest)], { type: 'application/json' });
+document.getElementById('manifest-link').href = URL.createObjectURL(blob);
+
+// ── SERVICE WORKER ──
+if ('serviceWorker' in navigator) {
+  const sw = `self.addEventListener('install',e=>e.waitUntil(caches.open('d1667-v1').then(c=>c.addAll(['.']))));
+self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));`;
+  const swBlob = new Blob([sw], { type: 'application/javascript' });
+  navigator.serviceWorker.register(URL.createObjectURL(swBlob));
+}
+</script>
+</body>
+</html>
